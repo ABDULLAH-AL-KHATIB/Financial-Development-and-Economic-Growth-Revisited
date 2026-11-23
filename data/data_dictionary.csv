@@ -1,0 +1,29 @@
+source_group,variable,definition_or_role,transformation_or_use
+IMF FDI,fd,Overall Financial Development Index,Standardised over the merged country-year panel and lagged one year for the primary model
+IMF FDI,fi,Financial Institutions index,Alternative financial-development exposure
+IMF FDI,fm,Financial Markets index,Alternative financial-development exposure
+IMF FDI,fid,Financial Institutions Depth index,Alternative financial-development exposure
+IMF FDI,fia,Financial Institutions Access index,Alternative financial-development exposure
+IMF FDI,fie,Financial Institutions Efficiency index,Alternative financial-development exposure
+IMF FDI,fmd,Financial Markets Depth index,Alternative financial-development exposure
+IMF FDI,fma,Financial Markets Access index,Alternative financial-development exposure
+IMF FDI,fme,Financial Markets Efficiency index,Alternative financial-development exposure
+World Bank WDI,growth,Annual GDP growth (NY.GDP.MKTP.KD.ZG),Primary outcome in annual percentage points
+World Bank WDI,inflation,CPI inflation (FP.CPI.TOTL.ZG),Lagged control; highly right-skewed with hyperinflation observations
+World Bank WDI,trade,Trade (% of GDP; NE.TRD.GNFS.ZS),Lagged control
+World Bank WDI,govcons,Government consumption (% of GDP; NE.CON.GOVT.ZS),Lagged control
+World Bank WDI,unemp,Unemployment (% of labour force; SL.UEM.TOTL.ZS),Lagged control
+World Bank WDI,urban,Urban population (% of total; SP.URB.TOTL.IN.ZS),Lagged control
+World Bank WDI,credit,Domestic credit to private sector (% of GDP; FS.AST.PRVT.GD.ZS),Used in a supplementary HP-filtered credit-gap exercise
+Penn World Table 11.0,rgdpo,Output-side real GDP at chained PPPs,Used to construct log output-side GDP per capita
+Penn World Table 11.0,rgdpna,Real GDP at constant national prices,Used for the alternative PWT growth outcome
+Penn World Table 11.0,pop,Population,Denominator for output-side GDP per capita
+Penn World Table 11.0,emp,Persons engaged,Denominator for capital-per-worker control
+Penn World Table 11.0,hc,Human-capital index,Lagged control
+Penn World Table 11.0,rnna,Capital stock at constant national prices,Used to construct log capital per worker
+Penn World Table 11.0,ctfp,TFP level at current PPPs,Logged for supplementary construction; not in the primary control set
+Penn World Table 11.0,labsh,Labor share of income,Supplementary extended-control specification
+World Bank WDI,gcf,Gross capital formation (% GDP),Supplementary extended-control specification
+World Bank WDI,school,Secondary school enrollment (% gross),Supplementary extended-control specification
+World Bank metadata,income,World Bank income group in the frozen country metadata,Time-invariant classification snapshot; use subgroup results descriptively
+World Bank metadata,region,World Bank region in the frozen country metadata,Country metadata

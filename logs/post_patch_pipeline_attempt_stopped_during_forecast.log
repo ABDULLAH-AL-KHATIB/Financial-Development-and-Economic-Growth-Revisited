@@ -1,0 +1,41 @@
+2026-11-20 20:43:06,336 INFO FROZEN INPUT 7686 rows / 183 countries / 1980-2021; raw sha256=7182ecf01717ac0312af6408cb0ef66b6945ca0d67fa38df6ac63c5995b03e14
+2026-11-20 20:43:06,379 INFO TABLE T01_provenance (24 rows)
+2026-11-20 20:43:06,536 INFO TABLE T02_funnel (2 rows)
+2026-11-20 20:43:06,537 INFO ESTIMATION SAMPLE 3624 obs / 135 countries (1992-2021)
+2026-11-20 20:43:06,563 INFO VERIFICATION FE==LSDV balanced block (25 x 8, rank 40) max diff 5.33e-12 PASS
+2026-11-20 20:43:08,794 INFO TABLE T03_primary_inference (5 rows)
+2026-11-20 20:43:08,858 INFO MUNDLAK CRE country-means Wald chi2(8)=32.467564 p=7.6785879e-05; FD coef=-0.735732 SE=0.469675 p=0.119597
+2026-11-20 20:43:09,001 INFO TABLE T04_estimators (8 rows)
+2026-11-20 20:43:09,264 INFO TABLE T05_sensitivity (24 rows)
+2026-11-20 20:43:11,138 INFO TABLE T06_jackknife (165 rows)
+2026-11-20 20:43:11,177 INFO TABLE T07_heterogeneity (3 rows)
+2026-11-20 20:43:11,446 INFO threshold bootstrap 100/1999 (0.3s)
+2026-11-20 20:43:11,669 INFO threshold bootstrap 200/1999 (0.5s)
+2026-11-20 20:43:11,903 INFO threshold bootstrap 300/1999 (0.7s)
+2026-11-20 20:43:12,137 INFO threshold bootstrap 400/1999 (1.0s)
+2026-11-20 20:43:12,359 INFO threshold bootstrap 500/1999 (1.2s)
+2026-11-20 20:43:12,572 INFO threshold bootstrap 600/1999 (1.4s)
+2026-11-20 20:43:12,834 INFO threshold bootstrap 700/1999 (1.7s)
+2026-11-20 20:43:13,064 INFO threshold bootstrap 800/1999 (1.9s)
+2026-11-20 20:43:13,282 INFO threshold bootstrap 900/1999 (2.1s)
+2026-11-20 20:43:13,501 INFO threshold bootstrap 1000/1999 (2.3s)
+2026-11-20 20:43:13,721 INFO threshold bootstrap 1100/1999 (2.5s)
+2026-11-20 20:43:13,945 INFO threshold bootstrap 1200/1999 (2.8s)
+2026-11-20 20:43:14,155 INFO threshold bootstrap 1300/1999 (3.0s)
+2026-11-20 20:43:14,367 INFO threshold bootstrap 1400/1999 (3.2s)
+2026-11-20 20:43:14,584 INFO threshold bootstrap 1500/1999 (3.4s)
+2026-11-20 20:43:14,796 INFO threshold bootstrap 1600/1999 (3.6s)
+2026-11-20 20:43:15,024 INFO threshold bootstrap 1700/1999 (3.8s)
+2026-11-20 20:43:15,248 INFO threshold bootstrap 1800/1999 (4.1s)
+2026-11-20 20:43:15,454 INFO threshold bootstrap 1900/1999 (4.3s)
+2026-11-20 20:43:15,685 INFO TABLE T08_nonlinearity (2 rows)
+2026-11-20 20:43:15,686 INFO THRESHOLD 4.5s: tau=0.252 supW=3.23 p=0.4985
+2026-11-20 20:43:16,553 INFO WITHIN AR(1) for IMF FDI: coef=0.823140 SE_country=0.012878 p=2.9248882e-102
+2026-11-20 20:43:16,556 INFO TABLE T09_diagnostics (7 rows)
+2026-11-20 20:43:16,558 INFO SPLIT train=2219 val=747 test=616 (2017-2021)
+2026-11-20 20:43:16,593 INFO TUNED Ridge         val RMSE=4.6046 {'alpha': 100}
+2026-11-20 20:43:16,620 INFO TUNED Lasso         val RMSE=4.5048 {'alpha': 0.1}
+2026-11-20 20:43:16,669 INFO TUNED ElasticNet    val RMSE=4.5248 {'alpha': 0.1, 'l1_ratio': 0.7}
+2026-11-20 20:43:28,880 INFO TUNED RandomForest  val RMSE=4.3519 {'max_depth': 6, 'min_samples_leaf': 20}
+2026-11-20 20:43:30,249 INFO TUNED HistGB        val RMSE=4.4715 {'max_leaf_nodes': 15, 'learning_rate': 0.05, 'max_iter': 300}
+2026-11-20 20:43:35,283 INFO TUNED MLP-Mundlak   val RMSE=4.6070 {'hidden_layer_sizes': (32, 16), 'alpha': 0.001}

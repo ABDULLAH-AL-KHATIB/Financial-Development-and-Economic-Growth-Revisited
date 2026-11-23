@@ -1,0 +1,261 @@
+{
+  "utc": "2026-11-21T10:44:05Z",
+  "seed": 2026,
+  "checks": {
+    "FE_equals_LSDV": true,
+    "lsdv_max_diff": 4.952038779038048e-12,
+    "verification_block": [
+      25,
+      8
+    ],
+    "n_est": 3624,
+    "n_countries": 135,
+    "window": [
+      1992,
+      2021
+    ],
+    "split": [
+      2010,
+      2016,
+      2021
+    ],
+    "threshold": [
+      40,
+      1999,
+      0.25163800953305454,
+      3.230433547090436,
+      0.4985
+    ],
+    "models": [
+      "FE benchmark (two-way FE)",
+      "Ridge",
+      "Lasso",
+      "ElasticNet",
+      "RandomForest",
+      "HistGB",
+      "MLP-Mundlak",
+      "MLP-within",
+      "CCE-linear"
+    ],
+    "all_models_ran": true
+  },
+  "provenance": [
+    {
+      "source": "WDI",
+      "var": "growth",
+      "code": "NY.GDP.MKTP.KD.ZG",
+      "obs": 8959,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "gdppc",
+      "code": "NY.GDP.PCAP.KD",
+      "obs": 8957,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "inflation",
+      "code": "FP.CPI.TOTL.ZG",
+      "obs": 7393,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "trade",
+      "code": "NE.TRD.GNFS.ZS",
+      "obs": 7348,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "govcons",
+      "code": "NE.CON.GOVT.ZS",
+      "obs": 7059,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "unemp",
+      "code": "SL.UEM.TOTL.ZS",
+      "obs": 6531,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "urban",
+      "code": "SP.URB.TOTL.IN.ZS",
+      "obs": 9982,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "gcf",
+      "code": "NE.GDI.TOTL.ZS",
+      "obs": 7067,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "popgrow",
+      "code": "SP.POP.GROW",
+      "obs": 9969,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "school",
+      "code": "SE.SEC.ENRR",
+      "obs": 5358,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "credit",
+      "code": "FS.AST.PRVT.GD.ZS",
+      "obs": 6250,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "broadmoney",
+      "code": "FM.LBL.BMNY.GD.ZS",
+      "obs": 6567,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "deposits",
+      "code": "FD.AST.PRVT.GD.ZS",
+      "obs": 7100,
+      "sha256": NaN
+    },
+    {
+      "source": "WDI",
+      "var": "lifeexp",
+      "code": "SP.DYN.LE00.IN",
+      "obs": 9755,
+      "sha256": NaN
+    },
+    {
+      "source": "IMF/FDI",
+      "var": "fd",
+      "code": "FD_FD_IX",
+      "obs": 7686,
+      "sha256": NaN
+    },
+    {
+      "source": "IMF/FDI",
+      "var": "fi",
+      "code": "FD_FI_IX",
+      "obs": 7686,
+      "sha256": NaN
+    },
+    {
+      "source": "IMF/FDI",
+      "var": "fm",
+      "code": "FD_FM_IX",
+      "obs": 7686,
+      "sha256": NaN
+    },
+    {
+      "source": "IMF/FDI",
+      "var": "fid",
+      "code": "FD_FID_IX",
+      "obs": 7686,
+      "sha256": NaN
+    },
+    {
+      "source": "IMF/FDI",
+      "var": "fia",
+      "code": "FD_FIA_IX",
+      "obs": 7686,
+      "sha256": NaN
+    },
+    {
+      "source": "IMF/FDI",
+      "var": "fie",
+      "code": "FD_FIE_IX",
+      "obs": 7686,
+      "sha256": NaN
+    },
+    {
+      "source": "IMF/FDI",
+      "var": "fmd",
+      "code": "FD_FMD_IX",
+      "obs": 7686,
+      "sha256": NaN
+    },
+    {
+      "source": "IMF/FDI",
+      "var": "fma",
+      "code": "FD_FMA_IX",
+      "obs": 7686,
+      "sha256": NaN
+    },
+    {
+      "source": "IMF/FDI",
+      "var": "fme",
+      "code": "FD_FME_IX",
+      "obs": 7686,
+      "sha256": NaN
+    },
+    {
+      "source": "PWT11.0",
+      "var": "pwt",
+      "code": "doi:10.34894/FABVLR",
+      "obs": 5839841,
+      "sha256": "7b337e94f39dfe304bc459e433f8ce0624496c812707ae0c924888f5142b3ab3"
+    }
+  ],
+  "tuned": {
+    "Ridge": {
+      "alpha": 100
+    },
+    "Lasso": {
+      "alpha": 0.1
+    },
+    "ElasticNet": {
+      "alpha": 0.1,
+      "l1_ratio": 0.7
+    },
+    "RandomForest": {
+      "max_depth": 6,
+      "min_samples_leaf": 20
+    },
+    "HistGB": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "max_iter": 300
+    },
+    "MLP-Mundlak": {
+      "hidden_layer_sizes": [
+        32,
+        16
+      ],
+      "alpha": 0.001
+    },
+    "MLP-within": {
+      "hidden_layer_sizes": [
+        32,
+        16
+      ],
+      "alpha": 0.001
+    }
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.0"
+  },
+  "input_sha256": {
+    "raw_panel.csv": "7182ecf01717ac0312af6408cb0ef66b6945ca0d67fa38df6ac63c5995b03e14",
+    "country_meta.csv": "5904a6b9dec2899c349ce4328c6e2aff1f023f224c7a548fa86988db9c8c56b9",
+    "pwt110.xlsx": "7b337e94f39dfe304bc459e433f8ce0624496c812707ae0c924888f5142b3ab3"
+  },
+  "data_mode": "frozen local snapshot; no network requests",
+  "dk_covariance": "Corrected Hoechle (2007)/xtscc small-sample factor: (T/(T-1))*((n-1)/(n-k)); k counts within-regression regressors, not absorbed fixed effects."
+}

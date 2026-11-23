@@ -1,0 +1,55 @@
+2026-11-20 18:59:17,081 INFO FROZEN INPUT 7686 rows / 183 countries / 1980-2021; raw sha256=7182ecf01717ac0312af6408cb0ef66b6945ca0d67fa38df6ac63c5995b03e14
+2026-11-20 18:59:17,170 INFO TABLE T01_provenance (24 rows)
+2026-11-20 18:59:17,506 INFO TABLE T02_funnel (2 rows)
+2026-11-20 18:59:17,506 INFO ESTIMATION SAMPLE 3624 obs / 135 countries (1992-2021)
+2026-11-20 18:59:17,570 INFO VERIFICATION FE==LSDV balanced block (25 x 8, rank 40) max diff 4.95e-12 PASS
+2026-11-20 18:59:24,287 INFO TABLE T03_primary_inference (5 rows)
+2026-11-20 18:59:24,685 INFO TABLE T04_estimators (8 rows)
+2026-11-20 18:59:25,159 INFO TABLE T05_sensitivity (24 rows)
+2026-11-20 18:59:28,739 INFO TABLE T06_jackknife (165 rows)
+2026-11-20 18:59:28,816 INFO TABLE T07_heterogeneity (3 rows)
+2026-11-20 18:59:29,387 INFO threshold bootstrap 100/1999 (0.6s)
+2026-11-20 18:59:29,860 INFO threshold bootstrap 200/1999 (1.0s)
+2026-11-20 18:59:30,336 INFO threshold bootstrap 300/1999 (1.5s)
+2026-11-20 18:59:30,824 INFO threshold bootstrap 400/1999 (2.0s)
+2026-11-20 18:59:31,288 INFO threshold bootstrap 500/1999 (2.5s)
+2026-11-20 18:59:31,850 INFO threshold bootstrap 600/1999 (3.0s)
+2026-11-20 18:59:32,516 INFO threshold bootstrap 700/1999 (3.7s)
+2026-11-20 18:59:33,188 INFO threshold bootstrap 800/1999 (4.4s)
+2026-11-20 18:59:33,810 INFO threshold bootstrap 900/1999 (5.0s)
+2026-11-20 18:59:34,485 INFO threshold bootstrap 1000/1999 (5.7s)
+2026-11-20 18:59:35,158 INFO threshold bootstrap 1100/1999 (6.3s)
+2026-11-20 18:59:35,629 INFO threshold bootstrap 1200/1999 (6.8s)
+2026-11-20 18:59:36,086 INFO threshold bootstrap 1300/1999 (7.3s)
+2026-11-20 18:59:36,566 INFO threshold bootstrap 1400/1999 (7.7s)
+2026-11-20 18:59:37,064 INFO threshold bootstrap 1500/1999 (8.2s)
+2026-11-20 18:59:37,544 INFO threshold bootstrap 1600/1999 (8.7s)
+2026-11-20 18:59:38,016 INFO threshold bootstrap 1700/1999 (9.2s)
+2026-11-20 18:59:38,482 INFO threshold bootstrap 1800/1999 (9.7s)
+2026-11-20 18:59:38,956 INFO threshold bootstrap 1900/1999 (10.1s)
+2026-11-20 18:59:39,463 INFO TABLE T08_nonlinearity (2 rows)
+2026-11-20 18:59:39,464 INFO THRESHOLD 10.6s: tau=0.252 supW=3.23 p=0.4985
+2026-11-20 18:59:41,634 INFO TABLE T09_diagnostics (6 rows)
+2026-11-20 18:59:41,640 INFO SPLIT train=2219 val=747 test=616 (2017-2021)
+2026-11-20 18:59:41,725 INFO TUNED Ridge         val RMSE=4.6046 {'alpha': 100}
+2026-11-20 18:59:41,796 INFO TUNED Lasso         val RMSE=4.5048 {'alpha': 0.1}
+2026-11-20 18:59:41,924 INFO TUNED ElasticNet    val RMSE=4.5248 {'alpha': 0.1, 'l1_ratio': 0.7}
+2026-11-20 19:00:24,957 INFO TUNED RandomForest  val RMSE=4.3519 {'max_depth': 6, 'min_samples_leaf': 20}
+2026-11-20 19:00:28,344 INFO TUNED HistGB        val RMSE=4.4715 {'max_leaf_nodes': 15, 'learning_rate': 0.05, 'max_iter': 300}
+2026-11-20 19:00:42,502 INFO TUNED MLP-Mundlak   val RMSE=4.6070 {'hidden_layer_sizes': (32, 16), 'alpha': 0.001}
+2026-11-20 19:01:03,772 INFO TUNED MLP-within    val RMSE=5.6385 {'hidden_layer_sizes': (32, 16), 'alpha': 0.001}
+2026-11-20 19:01:20,440 INFO TABLE T10_forecast_ranking (9 rows)
+2026-11-20 19:01:20,444 INFO TABLE T11_tuned_params (7 rows)
+2026-11-20 19:01:20,519 INFO TABLE T12_forecast_tests (8 rows)
+2026-11-20 19:01:20,532 INFO TABLE T13_tail (5 rows)
+2026-11-20 19:01:20,541 INFO TABLE T14_direction (9 rows)
+2026-11-20 19:01:21,063 INFO FIGURE F1_ranking
+2026-11-20 19:01:21,357 INFO FIGURE F2_inference
+2026-11-20 19:01:21,378 INFO Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-11-20 19:01:21,379 INFO Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-11-20 19:01:21,862 INFO FIGURE F3_tail
+2026-11-20 19:01:22,195 INFO FIGURE F4_jackknife
+2026-11-20 19:01:22,517 INFO FIGURE F5_nonlinearity
+2026-11-20 19:01:23,261 INFO FIGURE F6_scatter
+2026-11-20 19:01:24,042 INFO FIGURE F7_sensitivity
+2026-11-20 19:01:24,606 INFO FIGURE F8_holm
